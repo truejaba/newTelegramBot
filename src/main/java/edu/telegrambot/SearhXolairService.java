@@ -38,13 +38,12 @@ public class SearhXolairService {
     public String getActualAdressAndPrice(){
         getActualInfo();
         StringBuilder builder = new StringBuilder();
-        builder.append("К сожалению раствора нет в наличии, повторите запрос");
         for(Xolair x: allDrugs){
             if (x.isSolution()) {
-                builder = new StringBuilder();
-                builder.append("адрес: " + x.getAdress() + " цена: " + x.getPrice() + "\r\n");
+                builder.append("адрес: ").append(x.getAdress()).append(" цена: ").append(x.getPrice()).append("\r\n");
             }
         }
+        if (builder.toString().equals("")) return "К сожалению раствора нет в наличии, повторите запрос";
         return builder.toString();
     }
 

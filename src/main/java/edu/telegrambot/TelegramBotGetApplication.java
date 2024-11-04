@@ -7,7 +7,7 @@ import java.io.IOException;
 
 @SpringBootApplication
 public class TelegramBotGetApplication {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         SpringApplication.run(TelegramBotGetApplication.class, args);
     }
 }
