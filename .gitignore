@@ -1,0 +1,5 @@
+/.idea/
+/src/test/
+/target/
+/desktop.ini
+/src/main/resources/application.yaml
